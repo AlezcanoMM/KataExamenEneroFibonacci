@@ -14,7 +14,7 @@ public class ProductFibonacciTest {
     public void setUp(){
         productFibo = new ProductFibonacci();
     }
-    
+
     @Test
     public void test_Product_Of_Fibonacci_0(){
         expectedResult = new int[]{0, 1, 1};
@@ -25,5 +25,11 @@ public class ProductFibonacciTest {
     public void test_Product_Of_Fibonacci_1(){
         expectedResult = new int[]{1, 2, 1};
         assertArrayEquals(productFibo.productFibo(1), expectedResult);
+    }
+
+    @Test
+    public void test_Product_Of_Fibonacci_714(){
+        expectedResult = new int[]{21, 34, 1};
+        assertArrayEquals(productFibo.productFibo(714), expectedResult);
     }
 }
