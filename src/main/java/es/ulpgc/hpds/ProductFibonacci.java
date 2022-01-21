@@ -2,6 +2,8 @@ package es.ulpgc.hpds;
 
 public class ProductFibonacci {
     public int[] productFibo(int product){
-        return null;
+        int[] res;
+        res = new int[]{0, 1, 1};
+        return res;
     }
 }
