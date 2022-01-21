@@ -12,4 +12,10 @@ public class FibonacciTest {
         Fibonacci fibo = new Fibonacci();
         assertEquals(fibo.getFibonacciOf(0), 0);
     }
+
+    @Test
+    public void test_Fibonacci_of_1(){
+        Fibonacci fibo = new Fibonacci();
+        assertEquals(fibo.getFibonacciOf(1), 1);
+    }
 }
