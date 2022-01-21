@@ -38,4 +38,10 @@ public class ProductFibonacciTest {
         expectedResult = new int[]{34, 55, 0};
         assertArrayEquals(productFibo.productFibo(800), expectedResult);
     }
+
+    @Test
+    public void test_Product_Of_Fibonacci_1870(){
+        expectedResult = new int[]{34, 55, 1};
+        assertArrayEquals(productFibo.productFibo(1870), expectedResult);
+    }
 }
