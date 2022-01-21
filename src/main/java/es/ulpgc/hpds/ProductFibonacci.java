@@ -1,9 +1,20 @@
 package es.ulpgc.hpds;
 
 public class ProductFibonacci {
+
+    Fibonacci fibo = new Fibonacci();
+
     public int[] productFibo(int product){
-        int[] res;
-        res = new int[]{0, 1, 1};
-        return res;
+        int[] res = new int[3];
+        int n = 0;
+        while(true){
+            if((fibo.getFibonacciOf(n) * fibo.getFibonacciOf(n+1)) == product){
+                res[0] = n;
+                res[1] = n+1;
+                res[2] = 1;
+                return res;
+            }
+            n++;
+        }
     }
 }
