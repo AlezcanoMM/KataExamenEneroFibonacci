@@ -18,4 +18,10 @@ public class FibonacciTest {
         Fibonacci fibo = new Fibonacci();
         assertEquals(fibo.getFibonacciOf(1), 1);
     }
+
+    @Test
+    public void test_Fibonacci_of_2(){
+        Fibonacci fibo = new Fibonacci();
+        assertEquals(fibo.getFibonacciOf(2), 1);
+    }
 }
