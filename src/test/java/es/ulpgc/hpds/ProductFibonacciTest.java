@@ -23,7 +23,7 @@ public class ProductFibonacciTest {
 
     @Test
     public void test_Product_Of_Fibonacci_1(){
-        expectedResult = new int[]{1, 2, 1};
+        expectedResult = new int[]{1, 1, 1};
         assertArrayEquals(productFibo.productFibo(1), expectedResult);
     }
 
