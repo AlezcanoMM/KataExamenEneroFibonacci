@@ -6,6 +6,6 @@ public class Fibonacci {
         if(n == 0 || n == 1){
             return n;
         }
-        return 1;
+        return getFibonacciOf(n-1) + getFibonacciOf(n-2);
     }
 }
